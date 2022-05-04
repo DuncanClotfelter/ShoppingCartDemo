@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="book" class="net.clotfelter.duncan.ShoppingCartDemo.entities.products.Book">
+       <property name="id" value="0"/>
+       <property name="name" value="The Chamber of Secrets"/>
+       <property name="price" value="9.99"/>
+       <property name="genre" value="YA Fiction"/>
+       <property name="author" value="JK Rowling"/>
+       <property name="publisher" value="Queen of England"/>
+    </bean>
+
+    <bean id="apparel" class="net.clotfelter.duncan.ShoppingCartDemo.entities.products.Apparel">
+        <property name="id" value="1"/>
+        <property name="name" value="Gucci Bag"/>
+        <property name="price" value="999.99"/>
+        <property name="type" value="bag"/>
+        <property name="brand" value="Gucci"/>
+        <property name="design" value="expensive"/>
+    </bean>
+
+    <bean id="product" class="net.clotfelter.duncan.ShoppingCartDemo.entities.products.Product">
+        <property name="id" value="2"/>
+        <property name="name" value="Trampoline"/>
+        <property name="price" value="99.99"/>
+    </bean>
+
+    <bean id="OnlyUser" class="net.clotfelter.duncan.ShoppingCartDemo.entities.User">
+       <property name="id" value="0"/>
+    </bean>
+</beans>
